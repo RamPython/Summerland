@@ -109,9 +109,7 @@
                     <label class="sheet-largetext">Might Skills</label>
                          <label class="standard_text">Brawling</label><input type="number" name="attr_brawlingdice" class="sheet-smallnumber"  min="1" value="3"/>D
                             +<input type="number" name="attr_brawlpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                            <button class="astext" type='roll'  value='&{template:default} {{name=Brawling}} {{Roll=[[(@{brawlingdice} - 1 +@{WoundLevel} +?{Dice Mods|0}d6 + 1d6! + @{brawlpip}]]}}' ></button>
-
-
+                            <button type='roll' class="astext" value='/roll (@{brawlingdice} - 1)d6 + 1d6! + @{brawlpip}' ></button>
                         <label class="standard_text">Lift</label><input type="number" name="attr_liftdice" class="sheet-smallnumber"  min="1" value="3"/>D
                             +<input type="number" name="attr_liftpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
                             <button type='roll' class="astext" value='/roll (@{liftdice} - 1)d6 + 1d6! + @{liftpip}' ></button>

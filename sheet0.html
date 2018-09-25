@@ -87,9 +87,8 @@
                 <td>
                     <div class="sheet-col">
                         <div name="Wit" class="sheet-bold sheet-border">
-
+                            <div style="float:left;">
                                 <label>Wit</label>
-                                <div style="float:left;">
 
 
                                     <input type="number" name="attr_wit" class="sheet-smallnumber" min="1" value="3"/>D
@@ -119,12 +118,12 @@
             </tr>
         </table>
 
-    <div name="skills" class="sheet-section" >
-        <table class="attribute_table" style="width:100%;" >
-        <tr >
-            <td style="vertical-align:top; width:26%;">
-            <div class="sheet-4colrow" >
-                <div class="sheet-col" >
+    <div name="skills" class="sheet-section">
+        <table style="margin-top:-10px; margin-left:-10px;">
+        <tr>
+            <td>
+            <div class="sheet-4colrow">
+                <div class="sheet-col">
                     <label>Might Skills</label>
                     <label>Brawling</label><input type="number" name="attr_brawlingdice" class="sheet-smallnumber"  min="1" value="3"/>D
                         +<input type="number" name="attr_brawlpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
@@ -138,12 +137,12 @@
                 <label>Swimming</label><input type="number" name="attr_swimdice" class="sheet-smallnumber"  min="1" value="3"/>D
                     +<input type="number" name="attr_swimpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
                     <button type='roll' class="astext" value='/roll (@{swimdice} - 1)d6 + 1d6! + @{swimpip}' ></button>
-                <!--<label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk" style="width:75%;"/></label>-->
-                <!--<label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk2" style="width:75%;"/></label>-->
+                <label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk" style="width:75%;"/></label>
+                <label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk2" style="width:75%;"/></label>
             </div>
         </div>
         </td>
-        <td style="vertical-align:top; width:25%;">
+        <td>
             <div class="sheet-4colrow">
                 <div class="sheet-col">
                     <label>Agility Skills</label>
@@ -165,9 +164,9 @@
                     <label>Melee</label><input type="number" name="attr_Meleeice" class="sheet-smallnumber"  min="1" value="3"/>D
                         +<input type="number" name="attr_Meleepip" class="sheet-smallnumber" min="0" max="2" value="0"/>
                         <button type='roll' class="astext" value='/roll (@{Meleedice} - 1)d6 + 1d6! + @{Drivepip}' ></button>
-                    <label>Pick Pockets</label><input type="number" name="attr_Pocketsdice" class="sheet-smallnumber"  min="1" value="3"/>D
+                    <label>Pick Pockets</label><input type="number" name="attr_Pocketsice" class="sheet-smallnumber"  min="1" value="3"/>D
                         +<input type="number" name="attr_Pocketspip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                        <button type='roll' class="astext" value='/roll (@{Pocketsdice} - 1)d6 + 1d6! + @{Pocketspip}' ></button>
+                        <button type='roll' class="astext" value='/roll (@{Pocketsice} - 1)d6 + 1d6! + @{Pocketspip}' ></button>
                     <label>Pilot</label><input type="number" name="attr_Pilotice" class="sheet-smallnumber"  min="1" value="3"/>D
                         +<input type="number" name="attr_Pilotpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
                         <button type='roll' class="astext" value='/roll (@{Pilotdice} - 1)d6 + 1d6! + @{Pilotpip}' ></button>
@@ -180,12 +179,12 @@
                         <label>Stealth</label><input type="number" name="attr_Stealthdice" class="sheet-smallnumber"  min="1" value="3"/>D
                         +<input type="number" name="attr_Stealthpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
                     <button type='roll' class="astext" value='/roll (@{Stealthdice} - 1)d6 + 1d6! + @{Stealthpip}' ></button>
-                    <!--<label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk" style="width:75%;"/></label>-->
-                    <!--<label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk2" style="width:75%;"/></label>-->
+                    <label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk" style="width:75%;"/></label>
+                    <label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk2" style="width:75%;"/></label>
                 </div>
             </div>
             </td>
-            <td style="vertical-align:top; width:25%;">
+            <td>
                 <div class="sheet-4colrow">
                     <div class="sheet-col">
                         <label>Wit Skills</label>
@@ -198,59 +197,53 @@
                         <label>Hunt</label><input type="number" name="attr_Huntdice" class="sheet-smallnumber"  min="1" value="3"/>D
                             +<input type="number" name="attr_Huntpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
                             <button type='roll' class="astext" value='/roll (@{Huntdice} - 1)d6 + 1d6! + @{Huntpip}' ></button>
-                        <label>Language</label><input type="number" name="attr_Languagedice" class="sheet-smallnumber"  min="1" value="3"/>D
-                            +<input type="number" name="attr_Languagepip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                            <button type='roll' class="astext" value='/roll (@{Languagedice} - 1)d6 + 1d6! + @{Languagepip}' ></button>
-                        <label>Medicine</label><input type="number" name="attr_Medicinedice" class="sheet-smallnumber"  min="1" value="3"/>D
-                            +<input type="number" name="attr_Medicinepip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                            <button type='roll' class="astext" value='/roll (@{Medicinedice} - 1)d6 + 1d6! + @{Medicinepip}' ></button>
-                        <label>Navigation</label><input type="number" name="attr_Navigationice" class="sheet-smallnumber"  min="1" value="3"/>D
-                            +<input type="number" name="attr_Navigationpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                            <button type='roll' class="astext" value='/roll (@{Navigationdice} - 1)d6 + 1d6! + @{Navigationpip}' ></button>
-                        <label>Repair</label><input type="number" name="attr_Repairdice" class="sheet-smallnumber"  min="1" value="3"/>D
-                            +<input type="number" name="attr_Repairpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                            <button type='roll' class="astext" value='/roll (@{Repairdice} - 1)d6 + 1d6! + @{Repairpip}' ></button>
-                        <label>Search</label><input type="number" name="attr_Searchdice" class="sheet-smallnumber"  min="1" value="3"/>D
-                            +<input type="number" name="attr_Searchpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                            <button type='roll' class="astext" value='/roll (@{Searchdice} - 1)d6 + 1d6! + @{Searchpip}' ></button>
-                        <label>Security</label><input type="number" name="attr_Securitydice" class="sheet-smallnumber"  min="1" value="3"/>D
-                            +<input type="number" name="attr_Securitypip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                            <button type='roll' class="astext" value='/roll (@{Securitydice} - 1)d6 + 1d6! + @{Securitypip}' ></button>
-                            <label>Survival</label><input type="number" name="attr_Survivaldice" class="sheet-smallnumber"  min="1" value="3"/>D
-                            +<input type="number" name="attr_Survivalpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                        <button type='roll' class="astext" value='/roll (@{Survivaldice} - 1)d6 + 1d6! + @{Survivalpip}' ></button>
-                            <label>Tech</label><input type="number" name="attr_Techdice" class="sheet-smallnumber"  min="1" value="3"/>D
-                            +<input type="number" name="attr_Techpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                        <button type='roll' class="astext" value='/roll (@{Techdice} - 1)d6 + 1d6! + @{Techpip}' ></button>
-                        <!--<label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk" style="width:75%;"/></label>-->
-                        <!--<label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk2" style="width:75%;"/></label>-->
+                        <label>Drive</label><input type="number" name="attr_Drivedice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_Drivepip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{Drivedice} - 1)d6 + 1d6! + @{Drivepip}' ></button>
+                        <label>Heavy Weapons</label><input type="number" name="attr_heavydice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_heavypip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{heavydice} - 1)d6 + 1d6! + @{heavypip}' ></button>
+                        <label>Melee</label><input type="number" name="attr_Meleeice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_Meleepip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{Meleedice} - 1)d6 + 1d6! + @{Drivepip}' ></button>
+                        <label>Pick Pockets</label><input type="number" name="attr_Pocketsice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_Pocketspip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{Pocketsice} - 1)d6 + 1d6! + @{Pocketspip}' ></button>
+                        <label>Pilot</label><input type="number" name="attr_Pilotice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_Pilotpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{Pilotdice} - 1)d6 + 1d6! + @{Pilotpip}' ></button>
+                        <label>Pistol</label><input type="number" name="attr_Pistoldice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_Pistolpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{Pistoldice} - 1)d6 + 1d6! + @{Pistolpip}' ></button>
+                            <label>Rifle</label><input type="number" name="attr_Rifleice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_Riflepip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                        <button type='roll' class="astext" value='/roll (@{Rifledice} - 1)d6 + 1d6! + @{Riflepip}' ></button>
+                            <label>Stealth</label><input type="number" name="attr_Stealthdice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_Stealthpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                        <button type='roll' class="astext" value='/roll (@{Stealthdice} - 1)d6 + 1d6! + @{Stealthpip}' ></button>
+                        <label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk" style="width:75%;"/></label>
+                        <label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk2" style="width:75%;"/></label>
                     </div>
                 </div>
                 </td>
-                <td style="vertical-align:top; width:35%;">
+                <td>
                     <div class="sheet-4colrow">
                         <div class="sheet-col">
-                            <label>Charm Skills</label>
-                            <label>Bargain</label><input type="number" name="attr_Bargaindice" class="sheet-smallnumber"  min="1" value="3"/>D
-                                +<input type="number" name="attr_Bargainpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                                <button type='roll' class="astext" value='/roll (@{Bargaindice} - 1)d6 + 1d6! + @{Bargainpip}' ></button>
-                            <label>Command</label><input type="number" name="attr_Commanddice" class="sheet-smallnumber"  min="1" value="3"/>D
-                                +<input type="number" name="attr_Commandpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                                <button type='roll' class="astext" value='/roll (@{Commanddice} - 1)d6 + 1d6! + @{Commandpip}' ></button>
-                            <label>Diplomacy</label><input type="number" name="attr_Diplomacydice" class="sheet-smallnumber"  min="1" value="3"/>D
-                                +<input type="number" name="attr_Diplomacypip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                                <button type='roll' class="astext" value='/roll (@{Diplomacydice} - 1)d6 + 1d6! + @{Diplomacypip}' ></button>
-                            <label>Persuasion</label><input type="number" name="attr_Persuasiondice" class="sheet-smallnumber"  min="1" value="3"/>D
-                                +<input type="number" name="attr_Persuasionpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                                <button type='roll' class="astext" value='/roll (@{Persuasiondice} - 1)d6 + 1d6! + @{Persuasionpip}' ></button>
-                            <label>Seduce</label><input type="number" name="attr_Seducedice" class="sheet-smallnumber"  min="1" value="3"/>D
-                                +<input type="number" name="attr_Seducepip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                                <button type='roll' class="astext" value='/roll (@{Seducedice} - 1)d6 + 1d6! + @{Seducepip}' ></button>
-                            <label>Streetwise</label><input type="number" name="attr_Streetwisedice" class="sheet-smallnumber"  min="1" value="3"/>D
-                                +<input type="number" name="attr_Streetwisepip" class="sheet-smallnumber" min="0" max="2" value="0"/>
-                                <button type='roll' class="astext" value='/roll (@{Streetwisedice} - 1)d6 + 1d6! + @{Streetwisepip}' ></button>
-                            <!--<label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk" style="width:75%;"/></label>-->
-                            <!--<label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk2" style="width:75%;"/></label>-->
+                            <label>Agility Skills</label>
+                            <label>Brawling</label><input type="number" name="attr_brawlingdice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_brawlpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{brawldice} - 1)d6 + 1d6! + @{brawlpip}' ></button>
+                            <label>Lift</label><input type="number" name="attr_liftdice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_liftpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{liftdice} - 1)d6 + 1d6! + @{liftpip}' ></button>
+                            <label>Stamina</label><input type="number" name="attr_staminadice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_staminapip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{staminadice} - 1)d6 + 1d6! + @{staminapip}' ></button>
+                            <label>Swimming</label><input type="number" name="attr_swimdice" class="sheet-smallnumber"  min="1" value="3"/>D
+                            +<input type="number" name="attr_swimpip" class="sheet-smallnumber" min="0" max="2" value="0"/>
+                            <button type='roll' class="astext" value='/roll (@{swimdice} - 1)d6 + 1d6! + @{swimpip}' ></button>
+                            <label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk" style="width:75%;"/></label>
+                            <label>Perk:<input class="sheet-shorttext" type="text" name="attr_charm_perk2" style="width:75%;"/></label>
                         </div>
                     </td>
         </tr>
@@ -268,18 +261,17 @@
          <textarea name="attr_disadvantages" style="height:100px; width:250px;"></textarea>
     	</div>
     	<div class="sheet-col">
-         <label class="sheet-areaLabel">Past:</label>
-         <textarea name="attr_past" style="height:100px; width:250px;"></textarea>
+         <label class="sheet-areaLabel">Special Abilities:</label>
+         <textarea name="attr_specialAbilities" style="height:100px; width:250px;"></textarea>
     	</div>
     	</div>
     </div>
     <div name="characterbasics" class="sheet-section">
         <div class='sheet-3colrow'>
             <div class='sheet-col'>
-               <label>Trauma (D)<input type="number" name="attr_trauma" min="0" class="sheet-smallshortnumber" /></label>
-                <label>Stress (D)<input type="number" name="attr_stress" class="sheet-smallshortnumber" min="0" value="1"/></label>
-					<label>Money<input type="number" name="attr_credits" min="0" style="width: 40%; float: right; padding-bottom: 2px;"/></label>
-
+               <label>Funds (D)<input type="number" name="attr_funds" min="0" class="sheet-smallshortnumber" /></label>
+					<label>Credits<input type="number" name="attr_credits" min="0" style="width: 40%; float: right; padding-bottom: 2px;"/></label>
+					<label>Fate Points<input type="number" name="attr_fatePoints" class="sheet-smallshortnumber" min="0" value="1"/></label>
                <label>Character Points<input type="number" name="attr_characterPoints" class="sheet-smallshortnumber" min="0" value="5"/></label>
                <label>Strength Damage (D)<input type="number" name="attr_strengthDamage" class="sheet-smallshortnumber"/></label>
                <label>Move<input type="number" name="attr_move" class="sheet-smallshortnumber" min="0" value="10"/></label>
@@ -299,17 +291,13 @@
             </div>
 
             <div class='sheet-col'>
-              	<label style="text-decoration:underline;">Damage Resistance</label>
-            	<label>Block<input type="number" name="attr_blockdice" class="sheet-smallnumber"  min="1" value="3"/>D
-                    <button type='roll' class="astext" value='/roll (@{blockdice} - 1)d6 + 1d6!' ></button></label>
-            	<label>Dodge<input type="number" name="attr_dodgedice" class="sheet-smallnumber"  min="1" value="3"/>D
-                    <button type='roll' class="astext" value='/roll (@{dodgedice} - 1)d6 + 1d6!' ></button></label></label>
-            	<label>Parry<input type="number" name="attr_parrydice" class="sheet-smallnumber"  min="1" value="3"/>D
-                    <button type='roll' class="astext" value='/roll (@{parrydice} - 1)d6 + 1d6!' ></button></label></label>
-            	<label>Soak<input type="number" name="attr_soakdice" class="sheet-smallnumber"  min="1" value="3"/>D
-                    <button type='roll' class="astext" value='/roll (@{soakdice} - 1)d6 + 1d6!' ></button></label></label>
-
-
+              	<label style="text-decoration:underline;">Body Points Range</label>
+            	<label><input class="sheet-smalltext" type="text"/></label>
+            	<label><input class="sheet-smalltext" type="text"/></label>
+            	<label><input class="sheet-smalltext" type="text"/></label>
+            	<label><input class="sheet-smalltext" type="text"/></label>
+            	<label><input class="sheet-smalltext" type="text"/></label>
+            	<label>0</label>
             </div>
         </div>
     </div>
@@ -340,7 +328,25 @@
        		Ammo <input type="number" name="attr_addammo" class="sheet-smallnumber" min="0" value="0"/></label>
          </fieldset>
     	</div>
-
+    </div>
+    <div name="equipment" class="sheet-section">
+    	<div class="sheet-2colrow">
+    		<div class="sheet-col">
+    			<label>Cybernetics</label>
+    			<label>Type <input type="text" style="width:120px;" /> Notes <input type="text" style="width:190px;"/></label>
+    			<fieldset class="repeating_addcyber">
+    				<label>Type <input type="text" style="width:120px;" /> Notes <input type="text" style="width:190px;"/></label>
+    			</fieldset>
+         </div>
+    		<div class="sheet-col">
+    			<label>Other Equipment</label>
+    			<label>Type <input type="text" style="width:120px;" /> Notes <input type="text" style="width:190px;"/></label>
+    			<fieldset class="repeating_addequip">
+    				<label>Type <input type="text" style="width:120px;" /> Notes <input type="text" style="width:190px;"/></label>
+    			</fieldset>
+         </div>
+    	</div>
+    </div>
     <div name="additionalinfo" class="sheet-section">
       <div class="sheet-4colrow">
     		<div class="sheet-col">
@@ -352,8 +358,8 @@
    	      <textarea name="attr_objectives"></textarea></label>
     		</div>
     		<div class="sheet-col">
-      	   <label class="sheet-areaLabel">Equipment:
-         	<textarea name="attr_equipment"></textarea></label>
+      	   <label class="sheet-areaLabel">Native Language:
+         	<textarea name="attr_natlanguage"></textarea></label>
     		</div>
     		<div class="sheet-col">
     	   	<label class="sheet-areaLabel">Other Information:
@@ -361,7 +367,9 @@
     		</div>
     	</div>
     </div>
-
+	 <div name="footer" class="sheet-section" style="text-align: Right;">
+        <img src="https://archive.org/download/D6SpaceLogo/D6SpaceLogo.png"/>
+    </div>
 </div>
 
 

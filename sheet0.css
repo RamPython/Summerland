@@ -1,5 +1,5 @@
 .charsheet {
-    background-color: #AAAECAA;
+    background-color: #c0c0c0;
 }
 
 .charsheet table{
@@ -73,7 +73,7 @@
 }
 .charsheet .attribute_table{
     margin-top:-10px;
-    
+    margin-left:-10px;
     border: 2px black;
     border-style: solid;
     border-collapse: separate;
